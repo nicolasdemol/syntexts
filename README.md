@@ -33,5 +33,3 @@ Built with the Next.js 13.5 App Router, tRPC, TypeScript, Prisma & Tailwind
 - [Nicolas Demol](https://www.linkedin.com/in/nicolas-d-825a90127/) Text Me for contributing
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)

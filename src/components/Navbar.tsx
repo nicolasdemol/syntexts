@@ -16,12 +16,12 @@ const Navbar = () => {
   const user = getUser();
 
   return (
-    <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
+    <nav className="sticky h-20 inset-x-0 top-0 z-30 w-full bg-white/75 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
-        <div className="flex h-14 items-center justify-between border-b border-zinc-200">
-          <Link href="/" className="flex items-center space-x-1 z-40 font-semibold">
-            <Image src="/favicon.png" className="h-6 w-6" width={128} height={128} alt="logo quill" />
-            <span>Syntexts.</span>
+        <div className="flex h-20 items-center justify-between border-zinc-200">
+          <Link href="/" className="flex items-center z-40 font-semibold">
+            <Image src="/icon.svg" className="h-16 w-16" width={512} height={512} alt="logo" />
+            <span className="text-2xl">SynTexts AI</span>
           </Link>
 
           <MobileNav isAuth={!!user} />
@@ -33,7 +33,7 @@ const Navbar = () => {
                   href="/pricing"
                   className={buttonVariants({
                     variant: "ghost",
-                    size: "sm",
+                    size: "lg",
                   })}
                 >
                   Pricing
@@ -41,14 +41,14 @@ const Navbar = () => {
                 <LoginLink
                   className={buttonVariants({
                     variant: "ghost",
-                    size: "sm",
+                    size: "lg",
                   })}
                 >
                   Sign in
                 </LoginLink>
                 <RegisterLink
                   className={buttonVariants({
-                    size: "sm",
+                    size: "lg",
                   })}
                 >
                   Get started <ArrowRight className="ml-1.5 h-5 w-5" />
@@ -60,7 +60,7 @@ const Navbar = () => {
                   href="/dashboard"
                   className={buttonVariants({
                     variant: "ghost",
-                    size: "sm",
+                    size: "lg",
                   })}
                 >
                   Dashboard

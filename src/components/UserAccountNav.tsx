@@ -30,8 +30,8 @@ const UserAccountNav = async ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="overflow-visible">
-        <Button className="rounded-full h-8 w-8 aspect-square bg-slate-400">
-          <Avatar className="relative w-8 h-8">
+        <Button className="rounded-full h-10 w-10 aspect-square bg-slate-400">
+          <Avatar className="relative w-10 h-10">
             {imageUrl ? (
               <div className="relative aspect-square h-full w-full">
                 <Image

@@ -14,7 +14,13 @@ export default function Home() {
           </p>
         </div>
         <h1 className="flex flex-wrap text-5xl md:text-7xl lg:text-7xl tracking-tighter font-extrabold">
-          <span>Chat with your docs in seconds.</span>
+          <span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--develop-start-gradient)] to-[var(--develop-end-gradient)] tracking-tight">Chat</span> with your{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--develop-start-gradient)] to-[var(--develop-end-gradient)] tracking-tight">
+              docs
+            </span>{" "}
+            in seconds.
+          </span>
         </h1>
         <p className="mt-16 max-w-prose text-zinc-700 sm:text-xl">
           Syntexts allows you to have conversations with any PDF document.
@@ -43,31 +49,41 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
 
+      
 
-      <div className="mx-auto mt-32 sm:mt-56">
-        <div className="flex flex-wrap justify-center items-center space-x-4 px-6 lg:px-8">
-          <h2 className="mt-2 font-bold text-3xl text-gray-900 sm:text-4xl">
-            What{"'"}s Syntexts?
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            All the tools you need to make the Work. Faster.
-          </p>
-        </div>
-      </div>
       {/* value proposition section */}
-      <div>
+      <div className="mt-48">
         <div className="relative isolate">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           ></div>
+          <div className="flex flex-col mb-8 justify-start flex-1">
+            <span className="h-[100px] w-[1px] bg-gradient-to-t self-center from-[var(--develop-start-gradient)] to-white"></span>
+            <span className="mb-6 self-center inline-flex text-white justify-center items-center h-[40px] w-[40px] rounded-full bg-gradient-to-r from-[var(--develop-start-gradient)] to-[var(--develop-end-gradient)] font-semibold">
+              1
+            </span>
+            <h3 className="mb-8 self-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--develop-start-gradient)] to-[var(--develop-end-gradient)]">
+              Docs
+            </h3>
+          </div>
+          <div className="flex flex-col items-center px-8">
+            <h4 className="text-5xl sm:text-center sm:text-6xl md:text-5xl lg:text-6xl tracking-tighter font-bold mb-8">
+              Simplify the work for you
+            </h4>
+            <p className="text-center md:text-lg lg:text-xl max-w-[48rem] text-gray-600">
+              Learn more, faster and better. Unecessary informations that slow
+              your work, so you and your team can focus on learning the
+              essential.
+            </p>
+          </div>
 
           <div>
             <div className="mx-auto max-w-6xl px-6 lg:px-8">
               <div className="mt-16 flow-root sm:mt-24">
                 <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                   <Image
-                    src="/dashboard-preview.jpg"
+                    src="/dashboard-preview.png"
                     alt="product preview"
                     width={1364}
                     height={866}
@@ -88,16 +104,22 @@ export default function Home() {
 
       {/* Feature section */}
       <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
-        <div className="mb-12 px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="mt-2 font-bold text-4xl text-gray-900 sm:text-5xl">
-              Start chatting in minutes
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Chatting to your PDF files has never been easier than with AI
-              DocX.
-            </p>
-          </div>
+        <div className="flex flex-col mb-8 justify-start flex-1">
+          <span className="h-[100px] w-[1px] bg-gradient-to-t self-center from-[var(--preview-start-gradient)] to-white"></span>
+          <span className="mb-6 self-center inline-flex text-white justify-center items-center h-[40px] w-[40px] rounded-full bg-gradient-to-r from-[var(--preview-start-gradient)] to-[var(--preview-end-gradient)] font-semibold">
+            2
+          </span>
+          <h3 className="mb-8 self-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--preview-start-gradient)] to-[var(--preview-end-gradient)]">
+            Chat
+          </h3>
+        </div>
+        <div className="flex flex-col items-center px-8">
+          <h4 className="text-5xl sm:text-center md:text-5xl lg:text-6xl tracking-tighter font-bold mb-8">
+          Start chatting in minutes
+          </h4>
+          <p className="text-center md:text-lg lg:text-xl max-w-[48rem] text-gray-600">
+          Chatting to your PDF files has never been easier than with SynTexts AI.
+          </p>
         </div>
 
         {/* steps */}
@@ -150,7 +172,7 @@ export default function Home() {
           <div className="mt-16 flow-root sm:mt-24">
             <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
-                src="/file-upload-preview.jpg"
+                src="/file-upload-preview.png"
                 alt="uploading preview"
                 width={1419}
                 height={732}

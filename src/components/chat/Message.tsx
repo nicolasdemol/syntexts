@@ -24,7 +24,7 @@ const Message = forwardRef<HTMLDivElement, MessageProps>(
             {
               'order-2 bg-blue-600 rounded-sm':
                 message.isUserMessage,
-              'order-1 bg-zinc-800 rounded-sm':
+              'order-1 bg-[#AB68FF] rounded-sm':
                 !message.isUserMessage,
               invisible: isNextMessageSamePerson,
             }
@@ -32,7 +32,7 @@ const Message = forwardRef<HTMLDivElement, MessageProps>(
           {message.isUserMessage ? (
             <Icons.user className='fill-zinc-200 text-zinc-200 h-3/4 w-3/4' />
           ) : (
-            <Icons.logo className='fill-zinc-300 h-3/4 w-3/4' />
+            <Icons.logo className='bg-[#AB68FF] h-3/4 w-3/4' />
           )}
         </div>
 

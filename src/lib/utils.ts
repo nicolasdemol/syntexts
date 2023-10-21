@@ -17,8 +17,8 @@ export function absoluteUrl(path: string) {
 
 export function constructMetadata({
   title = "Syntexts - the AI for students",
-  description = "Syntexts is an open-source software to make chatting to your PDF files easy.",
-  image = "/thumbnail.png",
+  description = "Syntexts AI is an open-source software to make chatting to your PDF files easy.",
+  image = "/favicon.png",
   icons = "/favicon.ico",
   noIndex = false
 }: {

@@ -9,13 +9,23 @@ export default function Home() {
     <>
       <MaxWidthWrapper className="mb-16 mt-28 sm:mt-28 flex flex-col items-center justify-center text-center">
         <div className="mx-auto mb-16 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
+          <Image
+            src="/openai.png"
+            alt="openai logo"
+            width={24}
+            height={24}
+            quality={100}
+          />
           <p className="text-sm font-semibold text-gray-700">
-            Syntexts is now public!
+            Chat GPT-4 supported
           </p>
         </div>
         <h1 className="flex flex-wrap text-5xl md:text-7xl lg:text-7xl tracking-tighter font-extrabold">
           <span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--develop-start-gradient)] to-[var(--develop-end-gradient)] tracking-tight">Chat</span> with your{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--develop-start-gradient)] to-[var(--develop-end-gradient)] tracking-tight">
+              Chat
+            </span>{" "}
+            with your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--develop-start-gradient)] to-[var(--develop-end-gradient)] tracking-tight">
               docs
             </span>{" "}
@@ -48,8 +58,6 @@ export default function Home() {
           </Link>
         </div>
       </MaxWidthWrapper>
-
-      
 
       {/* value proposition section */}
       <div className="mt-48">
@@ -115,10 +123,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center px-8">
           <h4 className="text-5xl sm:text-center md:text-5xl lg:text-6xl tracking-tighter font-bold mb-8">
-          Start chatting in minutes
+            Start chatting in minutes
           </h4>
           <p className="text-center md:text-lg lg:text-xl max-w-[48rem] text-gray-600">
-          Chatting to your PDF files has never been easier than with SynTexts AI.
+            Chatting to your PDF files has never been easier than with SynTexts
+            AI.
           </p>
         </div>
 
